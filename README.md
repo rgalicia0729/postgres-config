@@ -21,6 +21,8 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=rgalicia0729@gmail.com
       - PGADMIN_DEFAULT_PASSWORD=pgadmin
+    volumes:
+      - ./pgadmin_data:/var/lib/pgadmin
     ports:
       - 8080:80
     depends_on:
